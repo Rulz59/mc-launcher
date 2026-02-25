@@ -1,0 +1,52 @@
+# Bug Report Issue Form
+name: 🐞Bugs
+description: Report a bug
+title: "[Bug] "
+body:
+#Description of the Bug
+- type: textarea
+  id: b_description
+  attributes:
+    label: Description of the Bug
+    placeholder: Type a description of the bug...
+  validations:
+    required: true
+#To reproduce
+- type: textarea
+  id: b_reproduction
+  attributes:
+    label: To reproduce
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: false
+#Expected Behavior
+- type: textarea
+  id: b_expected-behavior
+  attributes:
+    label: Description of how it was supposed to run
+    placeholder: Describe how the game was supposed to run...
+  validations:
+    required: false
+#Impact
+- type: dropdown
+  id: b_impact
+  attributes:
+    label: Does this bug affect Markell Slaw negatively?
+    options:
+      - Yes.
+      - Hopefully yes.
+  validations:
+    required: true
+#Terms
+- type: checkboxes
+  id: b_terms
+  attributes:
+    label: Accept the following terms
+    options:
+      - label: I accept that all magnets in my possession shall be sent for the anti-Markell Slaw cause
+        required: true

@@ -1,0 +1,21 @@
+# Feature Request Issue Form
+name: 💡Features
+description: Create a request for a game-feature
+title: "[Feature] "
+body:
+#Description of the Feature
+- type: textarea
+  id: f_description
+  attributes:
+    label: Description of the Feature
+    placeholder: Type a description of the feature...
+  validations:
+    required: true
+#Terms
+- type: checkboxes
+  id: f_terms
+  attributes:
+    label: Accept the following terms
+    options:
+      - label: I accept that all magnets in my possession shall be sent for the anti-Markell Slaw cause
+        required: true
