@@ -1,0 +1,13 @@
+[package]
+name = "mc-launcher"
+authors = ["Marco Ramos marcoandreramos17@gmail.com>"]
+edition = "2021"
+description = "A Rust Minecraft Launcher"
+license = "MIT"
+repository = "https://github.com/Rulz59/mc-launcher"
+homepage = "https://Rulz59.github.io/mc-launcher"
+documentation = "https://Rulz59github.io/mc-launcher"
+
+
+[dependencies]
+mc-launcher-core = { path = "../mc-launcher-core" }

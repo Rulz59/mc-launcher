@@ -28,8 +28,7 @@ jobs:
       - name: Build docs
         run: cargo doc --no-deps
       - name: Create custom index.html
-        run: echo "<meta http-equiv=\"refresh\" content=\"0; url=rust_template\">" > target/doc/index.html
-        # In url=project\ change 'project' to have the name of the project
+        run: echo "<meta http-equiv=\"refresh\" content=\"0; url=mc_launcher\">" > target/doc/index.html
       - name: Remove lock file
         run: rm target/doc/.lock
       - name: Upload artifact
